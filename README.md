@@ -48,7 +48,7 @@ Here are some ideas to benefit from this project:
 
 ## Demo
 
-Here is the demo link of this [project](https://salahineo.github.io/stocker/)
+Here is the demo link of this [project](https://salahineo.github.io/Stocker/)
 
 ## Technologies
 
