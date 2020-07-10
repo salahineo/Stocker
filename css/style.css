@@ -1,0 +1,564 @@
+/* Start Global */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #555, transparent);
+}
+
+/* End Global */
+
+/* Start Custom Framework */
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.sectionPadding {
+  padding: 50px 0;
+}
+
+.sectionHeading {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 80px;
+  color: #343a40;
+  font-size: 28px;
+}
+
+.sectionHeading::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #1abc9c;
+  border-radius: 20px;
+}
+
+.sectionParagraph {
+  color: grey;
+  line-height: 1.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+/* End Custom Framework */
+
+/* Start Go To Top Arrow */
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 10;
+  font-size: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  color: #aaa;
+}
+
+.arrow:hover {
+  color: #1abc9c;
+}
+/* End Go To Top Arrow */
+
+/* Start Navbar */
+
+.navbar {
+  height: 0;
+  color: #f8f9fa;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar .brand {
+  float: left;
+  width: 40%;
+  margin-top: 30px;
+}
+
+.navbar .brand h2 {
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.navbar .navLinks {
+  float: left;
+  width: 60%;
+  margin-top: 45px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.navbar .navLinks .navLink {
+  display: inline-block;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-size: 18px;
+}
+
+.navbar .navLinks .navLink a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.navbar .navLinks .navLink::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #1abc9c;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navLinks .navLink:hover,
+.navbar .navLinks .navLink.active a,
+.navbar .navLinks .navLink a:hover {
+  color: #1abc9c;
+}
+
+.navbar .navLinks .navLink:hover::before,
+.navbar .navLinks .navLink.active::before {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .navbar .brand,
+  .navbar .navLinks {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .brand h2 {
+    padding-top: 40px;
+  }
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.navHeader {
+  background: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  color: #f8f9fa;
+}
+
+.navHeader .bx-wrapper {
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+.navHeader .bx-wrapper .bx-viewport {
+  height: 150px !important;
+  text-align: center;
+  /* margin-top: calc(50vh - 75px); */
+}
+
+.navHeader .slider h2 {
+  font-size: 45px;
+  margin-top: 20px;
+}
+
+.navHeader .slider h2 span {
+  color: #1abc9c;
+}
+
+.navHeader .slider p {
+  letter-spacing: 2px;
+  color: #ddd;
+}
+/* End Header */
+
+/* Start Services */
+
+.services .service {
+  float: left;
+  width: 30.33333%;
+  margin-bottom: 50px;
+}
+
+.services .service:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.services .service i {
+  float: left;
+  width: 20%;
+  margin-right: 4%;
+  color: #1abc9c;
+  text-align: center;
+}
+
+.services .service .info {
+  float: left;
+  width: 76%;
+}
+
+.services .service .info h3 {
+  color: #555;
+  margin-top: 0;
+}
+
+/* End Services */
+
+/* Start Team */
+
+.team .info {
+  float: left;
+  width: 31%;
+  margin-right: 4%;
+}
+
+.team .ourTeam {
+  float: left;
+  width: 65%;
+  text-align: center;
+}
+
+.team .ourTeam .member {
+  display: inline-block;
+  position: relative;
+}
+
+.team .ourTeam .member .overlay {
+  background-color: rgba(26, 188, 156, 0.7);
+  color: #f8f9fa;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.team .ourTeam .member .overlay h3 {
+  border-top: 1px solid #f8f9fa;
+  border-bottom: 1px solid #f8f9fa;
+  margin-top: 55px;
+  padding: 5px 0;
+}
+
+.team .ourTeam .member,
+.team .ourTeam .member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.team .ourTeam .member:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+/* End Team */
+
+/* Start Testimonial */
+
+.testimonials {
+  background-image: url("../images/testimonial.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f8f9fa;
+  height: 350px;
+  position: relative;
+  text-align: center;
+}
+
+.testimonials .testimonail h2 {
+  display: inline-block;
+  margin: 60px 0;
+  color: #f8f9fa;
+}
+
+.testimonials .testimonail .client p {
+  letter-spacing: 2px;
+  line-height: 2;
+  color: #eee;
+  margin-bottom: 50px;
+}
+
+.testimonials .testimonail .client h3 {
+  color: #1abc9c;
+  letter-spacing: 2px;
+}
+
+.testimonials .testimonail .clientsSlider .client:not(.active) {
+  display: none;
+}
+
+/* End Testimonial */
+
+/* Start Projects */
+
+.projects .shuffleList {
+  margin-bottom: 40px;
+}
+
+.projects .shuffleList .shuffleItem {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #1abc9c;
+  color: #1abc9c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.projects .shuffleList .shuffleItem:hover,
+.projects .shuffleList .shuffleItem.active {
+  color: #f8f9fa;
+  background-color: #1abc9c;
+}
+
+.projects .shuffleImages div {
+  float: left;
+  height: 360px;
+  width: 32.3333%;
+  margin: 0 1% 20px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .shuffleImages div .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 188, 156, 0.9);
+  color: #f8f9fa;
+  display: none;
+  cursor: pointer;
+}
+
+.projects .shuffleImages div .overlay h3 {
+  margin-top: 160px;
+  border: 2px solid #f8f9fa;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.projects .shuffleImages div .overlay span {
+  position: absolute;
+  bottom: 19px;
+  right: 20px;
+}
+
+.projects .shuffleImages div .overlay i {
+  position: absolute;
+  bottom: 20px;
+  right: 45px;
+}
+
+.projects .shuffleImages div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* End Projects */
+
+/* Start Contact */
+
+.contact {
+  background-color: #1e2729;
+  color: #f8f9fa;
+  /* overflow: hidden; */
+}
+
+.contact .container > div {
+  float: left;
+  width: 30.3333%;
+}
+
+.contact .container > div:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.contact .about h2 span {
+  color: #1abc9c;
+}
+
+.contact .about p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 40px 0;
+}
+
+.contact .about .info {
+  margin-bottom: 30px;
+}
+
+.contact .about .info div {
+  margin: 20px 0;
+}
+
+.contact .about .info a,
+.contact .about .info p {
+  display: inline-block;
+  margin: 0;
+}
+
+.contact .about .info i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.contact .about .copy p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.contact .about .copy span {
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.contact .about .links a {
+  font-size: 23px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #f8f9fa;
+}
+
+.contact .about a:hover {
+  color: #1abc9c;
+}
+
+.contact .posts h2 {
+  margin-bottom: 40px;
+}
+
+.contact .posts .post {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.contact .posts .post:hover .postTitle h4 {
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .posts .post:hover .postTitle h4 {
+  color: #1abc9c;
+}
+
+.contact .posts .post .postImage {
+  float: left;
+  width: 18%;
+  overflow: hidden;
+  margin-right: 4%;
+}
+
+.contact .posts .post .postImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .posts .post .postTitle {
+  float: left;
+  width: 78%;
+}
+
+.contact .posts .post .postTitle h4 {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.contact .posts .post .postTitle span {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.contact .message h2 {
+  margin-bottom: 40px;
+}
+
+.contact .message form input,
+.contact .message form label,
+.contact .message form textarea {
+  display: block;
+  width: 70%;
+}
+
+.contact .message form label {
+  margin-bottom: 8px;
+}
+
+.contact .message form input,
+.contact .message form textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 0;
+  background-color: #3f4e52;
+  width: 250px;
+}
+
+.contact .message form input:focus,
+.contact .message form textarea:focus {
+  outline: none;
+  color: #f8f9fa;
+}
+
+.contact .message form textarea {
+  resize: none;
+}
+
+.contact .message form button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 1px solid #1abc9c;
+  color: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.contact .message form button:hover {
+  background-color: #1abc9c;
+}
+
+/* End Contact */
