@@ -1,0 +1,241 @@
+/* Start Global */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionHeading {
+    font-size: 25px;
+  }
+}
+
+/* End Global */
+
+/* Start Header */
+
+@media (max-width: 992px) {
+  .navbar .navLinks .navLink {
+    display: block;
+  }
+
+  .navbar .bars {
+    display: block;
+  }
+
+  .navbar .navLinks {
+    float: none;
+    width: 100%;
+    text-align: left;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: none;
+  }
+
+  .navbar .bars span {
+    display: none;
+  }
+
+  .navbar .navLinks .navLink {
+    margin-bottom: 10px;
+  }
+
+  .navbar .navLinks .navLink a {
+    color: #333;
+  }
+
+  .navbar .brand h2 {
+    font-size: 30px;
+  }
+
+  .navHeader .slider h2,
+  .navHeader .slider p {
+    padding: 0 50px;
+  }
+
+  .navHeader .bx-wrapper .bx-viewport {
+    margin-top: calc(70vh - 75px);
+  }
+
+  .navHeader .slider h2 {
+    font-size: 30px;
+  }
+
+  .navHeader .slider p {
+    font-size: 14px;
+  }
+  .openNav {
+    display: inline-block;
+  }
+}
+
+/* End Header */
+
+/* Start Services */
+
+@media (min-width: 1200px) {
+  .services .service:nth-of-type(2),
+  .services .service:nth-of-type(5) {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .services .service {
+    width: 49%;
+  }
+
+  .services .service:nth-child(even) {
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 991px) {
+  .services .service {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+
+  .services .service i {
+    float: none;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .services .service .info {
+    float: none;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .services .service .info {
+    width: 100%;
+  }
+}
+
+/* End Services */
+
+/* Start Team */
+
+@media (max-width: 1200px) {
+  .team .info {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .team .ourTeam {
+    float: none;
+    width: 100%;
+  }
+
+  .team .ourTeam .member {
+    margin: 50px auto 0;
+  }
+}
+
+/* End Team */
+
+/* Start Testimonials */
+
+@media (max-width: 992px) {
+  .testimonials {
+    height: 400px;
+  }
+}
+
+@media (max-width: 520px) {
+  .testimonials {
+    height: 480px;
+  }
+}
+
+/* End Testimonials */
+
+/* Start Projects */
+@media (min-width: 768px) and (max-width: 992px) {
+  .projects .shuffleImages div {
+    width: 49%;
+    margin: 0 0 20px 0;
+  }
+
+  .projects .shuffleImages div:nth-child(even) {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects .shuffleImages div {
+    width: 80%;
+    margin: 0 15% 20px;
+  }
+
+  .projects .shuffleList {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects .shuffleImages div {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .projects .shuffleList li {
+    margin-top: 20px;
+  }
+}
+
+/* End Projects */
+
+/* Start Contact */
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact .container > div {
+    width: 48%;
+  }
+  .contact .container .specialClearFix2 {
+    clear: both;
+  }
+  .contact .container > div:last-of-type {
+    width: 50%;
+    margin: 80px 25% 0;
+  }
+  .contact .message form input,
+  .contact .message form label,
+  .contact .message form textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .container .specialClearFix {
+    clear: both;
+  }
+  .contact .container > div {
+    width: 80%;
+    margin: 30px 10% 0;
+  }
+  .contact .message form input,
+  .contact .message form label,
+  .contact .message form textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact .container > div {
+    width: 98%;
+    margin: 30px 1% 0;
+  }
+}
+
+/* End Contact */
