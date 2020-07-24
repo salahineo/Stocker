@@ -26,7 +26,6 @@ hr {
 /* Start Custom Framework */
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: auto;
 }
@@ -132,6 +131,28 @@ hr {
   font-size: 18px;
 }
 
+.navbar .bars {
+  padding: 0;
+  font-size: 25px;
+  text-align: right;
+  padding-top: 35px;
+  padding-right: 28px;
+  display: none;
+}
+
+.navbar .bars i {
+  position: relative;
+}
+
+.navbar .bars span {
+  position: absolute;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent #f1f1f1 transparent;
+  top: 52px;
+  right: 40px;
+}
+
 .navbar .navLinks .navLink a {
   color: #f8f9fa;
   text-decoration: none;
@@ -156,20 +177,15 @@ hr {
 
 .navbar .navLinks .navLink:hover::before,
 .navbar .navLinks .navLink.active::before {
-  width: 100%;
+  width: 75px;
 }
 
-@media (max-width: 992px) {
-  .navbar .brand,
-  .navbar .navLinks {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
+.navbar .navLinks .navLink:nth-of-type(2):hover::before {
+  width: 50px;
+}
 
-  .navbar .brand h2 {
-    padding-top: 40px;
-  }
+.navbar .navLinks .navLink:nth-of-type(3):hover::before {
+  width: 110px;
 }
 
 /* End Navbar */
@@ -194,12 +210,13 @@ hr {
 .navHeader .bx-wrapper .bx-viewport {
   height: 150px !important;
   text-align: center;
-  /* margin-top: calc(50vh - 75px); */
+  margin-top: calc(60vh - 75px);
 }
 
 .navHeader .slider h2 {
-  font-size: 45px;
-  margin-top: 20px;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .navHeader .slider h2 span {
@@ -218,10 +235,6 @@ hr {
   float: left;
   width: 30.33333%;
   margin-bottom: 50px;
-}
-
-.services .service:not(:last-of-type) {
-  margin-right: 2%;
 }
 
 .services .service i {
