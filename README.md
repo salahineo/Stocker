@@ -56,7 +56,7 @@ Here is the demo link of this [project](https://salahineo.github.io/Stocker/)
 - CSS3
 - jQuery
 
-> This design is not responsive, so please review it with a minimum screen width of 1200px
+> This project is fully responsive
 
 ### Tools
 
