@@ -4,7 +4,16 @@ $(function () {
     win = $(window),
     sliderContent = $(".sliderContaienr"),
     imageShuffle = $(".shuffleImages div"),
-    arr = $(".arrow");
+    arr = $(".arrow"),
+    bars = $(".bars"),
+    navLink = $(".navLinks"),
+    borderArrow = $(".bars span");
+
+  // Responsive Nav Links
+  bars.on("click", function () {
+    borderArrow.fadeToggle();
+    navLink.fadeToggle();
+  });
 
   // Smooth Scrolling On Go To Top Arrow
   arr.on("click", function () {
@@ -39,7 +48,7 @@ $(function () {
   // Preserve Dimensions  On Window Resizing
   win.on("resize", function () {
     header.height(win.height());
-    sliderContent.css("marginTop", win.height() / 2 - 75);
+    sliderContent.css("marginTop", win.height() / 3 - 75);
   });
 
   // Trigger bxSlider
