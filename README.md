@@ -25,7 +25,7 @@
 
 ### Goal
 
-This project is the 5<sup>th</sup> challenge to me. I coded this project to practice on my knowledge of HTML, CSS, and jQuery in real project
+This project is the 5<sup>th</sup> challenge to me. I coded this project to practice on my knowledge of HTML, CSS, JavaScript, and jQuery in real project
 
 ### New Techniques
 
@@ -54,6 +54,7 @@ Here is the demo link of this [project](https://salahineo.github.io/Stocker/)
 
 - HTML5
 - CSS3
+- JavaScript
 - jQuery
 
 > This project is fully responsive
