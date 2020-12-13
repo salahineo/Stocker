@@ -469,15 +469,17 @@ hr {
 }
 
 .contact .about .links a {
-  font-size: 23px;
-  padding: 5px 10px;
+  font-size: 18px;
+  padding: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   color: #f8f9fa;
+  text-decoration: none
 }
 
 .contact .about a:hover {
   color: #1abc9c;
+  text-decoration: none
 }
 
 .contact .posts h2 {
