@@ -463,7 +463,7 @@ hr {
   margin-bottom: 20px;
 }
 
-.contact .about .copy span {
+.contact .about .copy span.name {
   color: #1abc9c;
   font-weight: bold;
 }
